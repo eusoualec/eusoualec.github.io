@@ -17,3 +17,4 @@ email: associacaolivresemcristo@outlook.com
 
 # Build settings
 markdown: kramdown
+exclude: [vendor]
