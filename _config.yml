@@ -13,6 +13,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://eusoualec.org.br" # the base hostname & protocol for your site
 telefone: (19) 3465-3218
-email: contato@eusoualec.org.br
+email: associacaolivresemcristo@outlook.com
+
 # Build settings
 markdown: kramdown
