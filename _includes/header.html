@@ -58,21 +58,20 @@
 
               <ul class="nav navbar-nav">
 
-                <li><a class="is-active" href="index.html">INÍCIO</a></li>
-                <li><a href="about.html">SOBRE</a></li>
-                <li class="has-child"><a href="#">ATIVIDADES</a>
+                <li><a{% if page.url == '/' %} class="is-active"{% endif %} href="index.html">INÍCIO</a></li>
+                <li><a{% if page.url == '/about.html' %} class="is-active"{% endif %} href="about.html">SOBRE</a></li>
 
+                <li class="has-child"><a href="#">ATIVIDADES</a>
                   <ul class="submenu">
                      <li class="submenu-item"><a href="causes.html">Causes list </a></li>
                      <li class="submenu-item"><a href="causes-single.html">Single cause </a></li>
                      <li class="submenu-item"><a href="causes-single.html">Single cause </a></li>
                      <li class="submenu-item"><a href="causes-single.html">Single cause </a></li>
                   </ul>
-
                 </li>
-                <li><a href="gallery.html">GALERIA</a></li>
-                <li><a href="contact.html">CONTATO</a></li>
 
+                <li><a{% if page.url == '/gallery.html' %} class="is-active"{% endif %} href="gallery.html">GALERIA</a></li>
+                <li><a{% if page.url == '/contact.html' %} class="is-active"{% endif %} href="contact.html">CONTATO</a></li>
               </ul>
 
             </div> <!-- /#navbar -->
