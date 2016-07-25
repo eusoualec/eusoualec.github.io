@@ -444,6 +444,13 @@ a:hover, a:focus, a:active {
   margin-bottom: 50px;
 }
 
+.main-container a {
+  text-decoration: underline;
+}
+
+.main-container a:hover {
+  color: #000;
+}
 /* Pages/Gallery
 ================================= */
 .gallery-item {
@@ -528,7 +535,7 @@ form .alert {
 }
 
 .page-title {
-  text-transform: uppercase;  
+  text-transform: uppercase;
 }
 
 .title-style-1 {
