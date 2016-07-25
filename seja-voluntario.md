@@ -1,6 +1,6 @@
 ---
 layout: page-heading
-page-title: SEJA VOLUNTÁRIO
+title: Seja Voluntário
 page-description: Essas crianças precisam de você
 ---
 Todas as [nossas atividades][1] são realizadas por voluntários. Pessoas normais como você. Desde donas

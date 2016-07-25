@@ -1,6 +1,6 @@
 ---
 layout: page-heading
-page-title: FAÇA UMA DOAÇÃO
+title: Faça uma doação
 page-description: Essas crianças precisam de você
 ---
 Se você não puder [doar seu tempo][1], qualquer contribuição financeira também é muito bem-vinda
