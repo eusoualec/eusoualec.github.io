@@ -19,4 +19,4 @@ Possuímos hoje no projeto cerca de **215** inscritos, que além de participarem
 
 Este projeto acontece com ajuda de corações generosos, pessoas que doam seu tempo e são responsáveis pela aplicação das atividades, preparo das refeições e manutenção do local. Contamos hoje com atuação de **76 voluntários**.
 
-![Voluntários e Fundadores](assets/images/fundadores.jpg =100%)
+<img src="assets/images/fundadores.jpg" alt="Voluntários e Fundadores" width=100%>
