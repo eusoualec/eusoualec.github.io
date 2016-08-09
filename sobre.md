@@ -1,7 +1,7 @@
 ---
 layout: page-heading
-title: Quem somos
-page-description: Sobre
+title: Quem Somos
+page-description: Conheça o nosso projeto
 ---
 ## O QUE SIGNIFICA ALEC?
 
@@ -9,7 +9,7 @@ page-description: Sobre
 
 Alec: “protetor e defensor da humanidade”.
 
-## QUEM SOMOS
+## SOBRE NÓS
 
 Temos por finalidade mostrar um mundo diferente para as crianças, adolescentes e jovens da nossa comunidade, permitindo que a liberdade possibilite uma nova escolha, de produzir o bem e criar um mundo melhor. Queremos que eles sejam livres para serem crianças, brincar, pular, dançar e desenvolver os dons e talentos que cada um de nós temos.
 
@@ -19,4 +19,4 @@ Possuímos hoje no projeto cerca de **215** inscritos, que além de participarem
 
 Este projeto acontece com ajuda de corações generosos, pessoas que doam seu tempo e são responsáveis pela aplicação das atividades, preparo das refeições e manutenção do local. Contamos hoje com atuação de **76 voluntários**.
 
-![Voluntários e Fundadores](/images/fundadores.jpg)
+![Voluntários e Fundadores](assets/images/fundadores.jpg)
