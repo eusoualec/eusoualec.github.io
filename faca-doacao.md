@@ -6,7 +6,7 @@ page-description: Essas crianças precisam de você
 Se você não puder [doar seu tempo][1], qualquer contribuição financeira também é muito bem-vinda
 para ajudar a manter toda infra-estrutura que atende as crianças.
 
-Faça doação de qualquer quantia em nossa conta bancária:
+Faça uma doação de qualquer quantia em nossa conta bancária:
 
 **Bradesco**\\
 **Agência 2188-1**\\
