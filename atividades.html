@@ -14,7 +14,8 @@ page-description: Hoje a Alec conta com mais de 20 atividades, todos os dias, pa
 
 	            <div class="row">
 
-								{% for activity in site.data.atividades %}
+								{% assign sorted_activities = site.data.atividades | sort:"name" %}
+								{% for activity in sorted_activities %}
 
 								<div class="col-md-3 col-sm-6">
 
