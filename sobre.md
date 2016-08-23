@@ -3,7 +3,7 @@ layout: page-heading
 title: Quem Somos
 page-description: Conheça o nosso projeto
 ---
-## HISTÓRIA
+### **HISTÓRIA**
 
 O projeto teve início pelas mãos do casal Fernanda e Willian, que ao chegarem na comunidade do Parque da Liberdade no ano de 2013 em Americana-SP, se depararam com uma triste cena: a de crianças desprotegidas e desorientadas.
 
@@ -13,17 +13,17 @@ Na comunidade, o casal pode ver que as notícias antes só assistidas na TV, de 
 
 Inicialmente em um local improvisado, foi possível proporcionar a Educação Cristã, que é o alicerce para a vida. Mas a necessidade de estar em contato frequentemente com esses jovens, fez com que a cada dia, novos voluntários fossem se juntando ao projeto. O que contribuiu para a fundação de uma sede que abrigasse mais membros.
 
-A ideia foi compartilhada com amigos, e a cada dia mais pessoas foram contribuindo para o desenvolvimento de boas ideias. Até que no dia 12 de outubro de 2014 foi fundada a sede das Alec.
+A ideia foi compartilhada com amigos, e a cada dia mais pessoas foram contribuindo para o desenvolvimento de boas ideias. Até que no dia 12 de outubro de 2014 foi fundada a sede da Alec.
 
-## O QUE SIGNIFICA ALEC?
+### **O QUE SIGNIFICA ALEC?**
 
 **ALEC** é a sigla para Associação Livres em Cristo. Porém também é um nome originado a partir do grego Aléxandros, que é formado pela junção dos termos aléxo, que significa “proteger”, e andrós, que significa “humano”.
 
 Alec: “protetor e defensor da humanidade”.
 
-## SOBRE NÓS
+### **SOBRE NÓS**
 
-O projeto surgiu da necessidade de mudar um pouco a vida dessas crianças. Temos por finalidade mostrar um mundo diferente para as crianças, adolescentes e jovens da nossa comunidade, permitindo que a liberdade possibilite uma nova escolha: a de produzir o bem e criar um mundo melhor.
+Temos por finalidade mostrar um mundo diferente para as crianças, adolescentes e jovens da nossa comunidade, permitindo que a liberdade possibilite uma nova escolha: a de produzir o bem e criar um mundo melhor.
 
 Queremos que eles sejam livres para serem crianças, brincar, pular, dançar e desenvolver os dons e talentos que cada um de nós temos.
 
