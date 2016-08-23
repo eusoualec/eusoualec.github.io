@@ -1,0 +1,53 @@
+- name: Informática
+  description: Hoje em dia é essencial saber utilizar um computador. Pensando nisso a Alec oferece curso de informática básica para crianças e adolescentes.
+
+- name: Teatro
+  description: Oficinas de teatro para as crianças desenvolverem o lado cultural e criativo. O curso desenvolve habilidades como concentração e coordenação.
+
+- name: Balé
+  description: Além de toda classe, o balé também é indicado tanto para crianças como para adultos por ser uma atividade física que trabalha todo o corpo, como poucas modalidades esportivas fazem.
+
+- name: Culinária
+  description: Não existe jeito mais divertido de ensinar do que uma aula de culinária. Nela os pequenos aprendem a aproveitar melhor os alimentos e se tornam ainda mais criativos.
+
+- name: Futebol
+  description: Na Alec jogar bola vai muito além do exercício físico, é uma atividade que ajuda as crianças a estimular o respeito e trabalho em equipe, tudo isso se divertindo.
+
+- name: Refeições
+  description: No combate à fome! Ao final de cada atividade, os voluntários da Alec servem uma saborosa refeição para as crianças se alimentarem e aprenderem ainda mais.
+
+- name: Violão
+  description: As oficinas de violão fazem a criançada encontrar novas maneiras de entretenimento, além de estimular a coordenação e soltarem a voz.
+
+- name: Dança de Rua
+  description: Mais do que um estilo de dança influenciado por vários ritmos e muito exercício físico, a dança de rua também está associada à cultura.
+
+- name: Artesanato
+  description: O artesanato é perfeito para as crianças se expressarem e descobrirem a si mesmas, incentivando a criatividade e o convívio.
+
+- name: Coral
+  description: O coral ajuda a desenvolver o trabalho em grupo da criança, uma vez que todos se ajudam para construir uma voz maior.
+
+- name: Desenho
+  description: Desenhar ajuda as crianças a terem um momento de tranquilidade, além de melhorar a habilidade manual e percepção visual.
+
+- name: Bateria
+  description: Tocar bateria, além de ser muito divertido e tornar as crianças mais felizes, possui vários beneficios para o corpo.
+
+- name: Cineminha
+  description: Momento da criançada relaxar assistindo um filme em um ambiente tranquilo e com seus amigos.
+
+- name: Karatê
+  description: Muito mais do que uma luta, o karatê ensina lealdade, comprometimento e disciplina para estas crianças.
+
+- name: Educação Cristã
+  description: Além de uma religião, a educação cristã ensina mais sobre a vida, servindo como base para o desenvolvimento humano.
+
+- name: Reforço Escolar
+  description: Ajuda para os pequenos na educação escolar, repassando itens em que eles tiveram dificuldades e criando alunos melhores.
+
+- name: Capoeira
+  description: A capoeira é um exercício fantástico para corpo e mente, além de ser um patrimônio cultural de nosso país.
+
+- name: Tem muito mais
+  description: A Alec oferece para dezenas de crianças mais de 20 atividades, como inglês e reforço escolar, além de ações especiais.

@@ -1,0 +1,44 @@
+---
+layout: heading
+title: Nossas Atividades
+page-description: Hoje a Alec conta com mais de 20 atividades, todos os dias, para crianças e adolescentes
+---
+
+	<div class="main-container">
+
+		<div class="our-causes fadeIn animated">
+
+	        <div class="container">
+
+	            <h2 class="title-style-1">ATIVIDADES E CURSOS<span class="title-under"></span></h2>
+
+	            <div class="row">
+
+								{% for activity in site.data.atividades %}
+
+								<div class="col-md-3 col-sm-6">
+
+										<div class="cause">
+
+												<img src="assets/images/causes/{{ activity.name }}.jpg" alt="" class="cause-img">
+
+												<h4 class="cause-title">{{ activity.name }}</h4>
+												<div class="cause-details">
+														{{ activity.description }}
+												</div>
+
+										</div> <!-- /.cause -->
+
+								</div>
+								{% endfor %}
+
+	            </div>
+
+	         </div>
+
+	    </div> <!-- /.our-causes -->
+
+
+
+
+	</div> <!-- /.main-container  -->
