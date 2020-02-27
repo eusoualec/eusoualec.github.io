@@ -27,8 +27,8 @@ Temos por finalidade mostrar um mundo diferente para as crianças, adolescentes 
 
 Queremos que eles sejam livres para serem crianças, brincar, pular, dançar e desenvolver os dons e talentos que cada um de nós temos.
 
-Possuímos hoje cerca de 215 inscritos, que além de participarem das mais de 20 atividades oferecidas, recebem uma refeição antes de voltarem para suas casas. Ao todo são servidas entre 100 a 150 refeições por dia.
+Possuímos hoje cerca de {{ site.inscritos }} inscritos, que além de participarem das mais de 20 atividades oferecidas, recebem uma refeição antes de voltarem para suas casas. Ao todo são servidas {{ site.refeicoes }} refeições por dia.
 
-Este projeto acontece com ajuda de corações generosos, que já somam 76 voluntários, pessoas que doam seu tempo e são responsáveis pela aplicação das atividades, preparo das refeições e manutenção do local.
+Este projeto acontece com ajuda de corações generosos, que já somam {{ site.voluntarios }} voluntários, pessoas que doam seu tempo e são responsáveis pela aplicação das atividades, preparo das refeições e manutenção do local.
 
 ![Fundadores](assets/images/fundadores.jpg)

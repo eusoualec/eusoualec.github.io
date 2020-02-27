@@ -4,8 +4,11 @@ description: > # this means to ignore newlines until "baseurl:"
   Eu Sou Alec - Associação Livres em Cristo
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://eusoualec.org.br" # the base hostname & protocol for your site
-telefone: (19) 3465-3218 / 99129-2661
+telefone: (19) 99129-2661
 email: eusoualec@gmail.com
+inscritos: 325
+refeicoes: 300
+voluntarios: 60
 
 # Build settings
 markdown: kramdown
