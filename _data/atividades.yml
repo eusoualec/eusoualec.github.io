@@ -19,14 +19,8 @@
 - name: Violão
   description: As oficinas de violão fazem a criançada encontrar novas maneiras de entretenimento, além de estimular a coordenação e soltarem a voz.
 
-- name: Dança de Rua
-  description: Mais do que um estilo de dança influenciado por vários ritmos e muito exercício físico, a dança de rua também está associada à cultura.
-
 - name: Artesanato
   description: O artesanato é perfeito para as crianças se expressarem e descobrirem a si mesmas, incentivando a criatividade e o convívio.
-
-- name: Coral
-  description: O coral ajuda a desenvolver o trabalho em grupo da criança, uma vez que todos se ajudam para construir uma voz maior.
 
 - name: Desenho
   description: Desenhar ajuda as crianças a terem um momento de tranquilidade, além de melhorar a habilidade manual e percepção visual.
@@ -36,9 +30,6 @@
 
 - name: Cineminha
   description: Momento da criançada relaxar assistindo um filme em um ambiente tranquilo e com seus amigos.
-
-- name: Karatê
-  description: Muito mais do que uma luta, o karatê ensina lealdade, comprometimento e disciplina para estas crianças.
 
 - name: Educação Cristã
   description: Além de uma religião, a educação cristã ensina mais sobre a vida, servindo como base para o desenvolvimento humano.
