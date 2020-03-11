@@ -75,8 +75,6 @@ a:hover, a:focus, a:active {
   list-style: none;
   background: #1f76bd;
   padding: 0;
-  width: 150px;
-  left: -35px;
   visibility: hidden;
   top: 85px;
   -moz-transition: all, 0.05s;
@@ -177,7 +175,6 @@ a:hover, a:focus, a:active {
 }
 
 .about-us-col {
-  height: 325px;
   padding: 25px;
   text-align: center;
   background-color: #0076a3;
@@ -193,6 +190,7 @@ a:hover, a:focus, a:active {
 }
 .about-us-col .col-title {
   text-transform: uppercase;
+  height: 50px;
 }
 .about-us-col .col-details {
   text-align: justify;
