@@ -1,7 +1,7 @@
 ---
 layout: heading
-title: Galeria
-page-description: Imagens do dia a dia da Alec
+title: Ações Sociais
+page-description: Veja alguns de nossos momentos especiais
 ---
 
 	<div class="main-container">
@@ -10,12 +10,12 @@ page-description: Imagens do dia a dia da Alec
 
 			<div class="row">
 
+				{% assign image_files = site.static_files | where: "gallery", true %}
+				{% for image in image_files %}
 
-				{% for i in (1..16) %}
+					<a href="{{ image.path }}" class="col-md-3 gallery-item lightbox" rel="prettyPhoto[alec]">
 
-					<a href="assets/images/gallery/{{ i }}.jpg" class="col-md-3 col-sm-4 gallery-item lightbox" rel="prettyPhoto">
-
-						<img src="assets/images/gallery/thumb/{{ i }}.jpg" alt="Imagem da galeria {{ i }}">
+						<img src="{{ image.path | replace: "gallery", "gallery-thumb" }}" >
 
 						<span class="on-hover">
 
@@ -25,12 +25,8 @@ page-description: Imagens do dia a dia da Alec
 
 				{% endfor %}
 
-
 			</div>
 
 		</div>
 
-
 	</div> <!-- /.main-container  -->
- <!-- PrettyPhoto javascript file -->
-        <script src="assets/js/jquery.prettyPhoto.js"></script>

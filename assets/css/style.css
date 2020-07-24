@@ -452,12 +452,15 @@ a:hover, a:focus, a:active {
 /* Pages/Gallery
 ================================= */
 .gallery-item {
-  padding: 0;
+  padding: 10px;
   display: block;
   margin: 0;
 }
 .gallery-item img {
-  width: 100%;
+  object-fit: none; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  height: 210px;
+  width: 280px;
 }
 
 .contact-items {

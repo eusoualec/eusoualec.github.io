@@ -13,3 +13,9 @@ voluntarios: 60
 # Build settings
 markdown: kramdown
 exclude: [vendor]
+
+defaults:
+  - scope:
+      path: "assets/images/gallery"
+    values:
+      gallery: true
