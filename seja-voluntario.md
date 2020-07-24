@@ -13,5 +13,5 @@ Ser voluntário é doar seu tempo, trabalho e carinho. Caso deseje realizar uma
 [Fale conosco][2] e faça a diferença para elas.
 
 [1]: /atividades
-[2]: /contact
+[2]: /contato
 [3]: /faca-doacao

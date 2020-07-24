@@ -460,7 +460,7 @@ a:hover, a:focus, a:active {
   object-fit: none; /* Do not scale the image */
   object-position: center; /* Center the image within the element */
   height: 210px;
-  width: 280px;
+  width: 100%;
 }
 
 .contact-items {
