@@ -15,6 +15,6 @@ Ou na conta bancária:
 **Bradesco**\\
 **Agência 215**\\
 **Conta 575618-9**\\
-**Associação Livres em Cristo**\\
+**Associação Livres em Cristo**
 
 [1]: /seja-voluntario
