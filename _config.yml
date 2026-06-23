@@ -3,7 +3,7 @@ title: Eu Sou Alec
 description: > # this means to ignore newlines until "baseurl:"
   Eu Sou Alec - Associação Livres em Cristo
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://eusoualec.org.br" # the base hostname & protocol for your site
+url: "https://eusoualec.org.br" # the base hostname & protocol for your site
 telefone: (19) 99129-2661
 email: eusoualec@gmail.com
 inscritos: 325
