@@ -17,4 +17,4 @@ Ou na conta bancária:
 **Conta 575618-9**\\
 **Associação Livres em Cristo**
 
-[1]: /seja-voluntario
+[1]: /seja-voluntario.html
