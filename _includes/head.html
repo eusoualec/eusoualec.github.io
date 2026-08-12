@@ -5,6 +5,9 @@
 
   <!-- Title, description, canonical, Open Graph, Twitter Card e JSON-LD -->
   {% seo %}
+  {%- if page.noindex %}
+  <meta name="robots" content="noindex">
+  {%- endif %}
 
   <!-- Fonts: um único request, com swap para o texto não ficar invisível enquanto carrega -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
