@@ -168,7 +168,8 @@
      Lightbox da galeria, sobre o <dialog> nativo
 
      O <dialog> já entrega, de graça, o que o prettyPhoto fazia à mão: fundo
-     modal, prisão de foco, fechar no Esc e devolver o foco ao link de origem.
+     modal, prisão de foco e fechar no Esc. A devolução do foco é feita aqui,
+     explicitamente — ver o listener de "close".
      ========================================================================== */
   function iniciaLightbox() {
     var links = Array.prototype.slice.call(document.querySelectorAll('a.lightbox'));
@@ -219,6 +220,16 @@
     // clique no fundo (fora da imagem) fecha
     dialogo.addEventListener('click', function (e) {
       if (e.target === dialogo || e.target.classList.contains('lightbox-figure')) dialogo.close();
+    });
+
+    // Devolve o foco ao thumbnail da foto que estava aberta — e nao ao link
+    // clicado la atras — para quem navegou pela galeria continuar dali.
+    // Explicito de proposito: a restauracao automatica do <dialog> depende do
+    // navegador e nao e confiavel nas versoes mais antigas. Vale para qualquer
+    // forma de fechar: Esc, botao ou clique no fundo.
+    dialogo.addEventListener('close', function () {
+      var alvo = links[indice];
+      if (alvo) alvo.focus();
     });
   }
 
