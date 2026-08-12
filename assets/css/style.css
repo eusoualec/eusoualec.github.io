@@ -106,7 +106,8 @@ a:hover, a:focus, a:active {
   padding: 20px 15px;
   border-bottom: 2px solid transparent;
 }
-.navbar-main li:hover .submenu {
+.navbar-main li:hover .submenu,
+.navbar-main li:focus-within .submenu {
   top: 62px;
   visibility: visible;
   -moz-transition: all, 0.25s;
@@ -162,6 +163,12 @@ a:hover, a:focus, a:active {
 }
 .carousel-home .btn {
   margin-top: 30px;
+}
+/* Impede que o video institucional estoure a largura da legenda em telas
+   estreitas (os atributos width/80% no HTML sao invalidos e ignorados). */
+.carousel-home .carousel-caption video {
+  max-width: 100%;
+  height: auto;
 }
 
 .section-home {
@@ -833,19 +840,16 @@ form .alert {
   .navbar-main .navbar-brand {
     padding: 6px 15px;
   }
+  /* No menu recolhido (mobile) o submenu fica sempre aberto: hover nao existe
+     em telas de toque e ":focus" no <li> nunca dispara, o que deixava
+     Doacoes/Voluntariado inalcancaveis pelo menu. */
   .navbar-main .submenu {
     position: initial;
-    display: none;
+    display: block;
+    visibility: visible;
     width: 100%;
   }
-  .navbar-main li:hover .submenu,
-  .navbar-main li:active .submenu,
-  .navbar-main li:focus .submenu {
-    display: block;
-  }
-  .navbar-main li:hover .submenu li,
-  .navbar-main li:active .submenu li,
-  .navbar-main li:focus .submenu li {
+  .navbar-main .submenu li {
     background: #115c9b;
     border-top-color: #1f76bd;
   }
@@ -855,6 +859,12 @@ form .alert {
   }
   .carousel-home .carousel-subtitle {
     font-size: 16px;
+  }
+  /* O video institucional nao cabe na legenda do carrossel em telas pequenas:
+     ficava cortado e sobrepondo o CTA. Solucao definitiva e tira-lo do
+     carrossel e dar a ele uma secao propria (fase 2). */
+  .carousel-home .carousel-caption video {
+    display: none;
   }
   .carousel-home .carousel-control {
     background: #1f76bd;
@@ -884,6 +894,12 @@ form .alert {
   }
   .carousel-home .carousel-indicators {
     bottom: 0;
+  }
+  /* Os CTAs deixaram de usar .hidden-xs, entao precisam caber na legenda. */
+  .carousel-home .btn {
+    margin-top: 8px;
+    padding: 4px 10px;
+    font-size: 12px;
   }
 }
 /* =============================================================================

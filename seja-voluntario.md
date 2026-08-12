@@ -1,7 +1,8 @@
 ---
 layout: page-heading
 title: Seja Voluntário
-page-description: Essas crianças precisam de você
+subtitle: Essas crianças precisam de você
+description: Seja voluntário na Alec. Todas as nossas atividades são realizadas por voluntários que doam seu tempo, trabalho e carinho.
 ---
 Todas as [nossas atividades][1] são realizadas por voluntários. Pessoas normais como você. Desde donas
 de casa até médicos, advogados, gerentes de banco e diretores de empresa. Já somos mais de 70
