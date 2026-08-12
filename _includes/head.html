@@ -3,10 +3,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title | escape }} - {% endif %}{{ site.title | escape }}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <!-- Title, description, canonical, Open Graph, Twitter Card e JSON-LD -->
+  {% seo %}
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Fonts -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet' type='text/css'>
@@ -17,17 +16,11 @@
   <!-- Font awesome -->
   <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
-  <!-- Owl carousel -->
-  <link rel="stylesheet" href="assets/css/owl.carousel.css">
-  
   <!-- PrettyPhoto -->
   <link rel="stylesheet" href="assets/css/prettyPhoto.css">
 
   <!-- Template main Css -->
   <link rel="stylesheet" href="assets/css/style.css">
-
-  <!-- Modernizr -->
-  <script src="assets/js/modernizr-2.6.2.min.js"></script>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">

@@ -1,9 +1,11 @@
 # Site settings
 title: Eu Sou Alec
-description: > # this means to ignore newlines until "baseurl:"
-  Eu Sou Alec - Associação Livres em Cristo
+tagline: Associação Livres em Cristo
+description: A Alec oferece mais de 20 atividades, cursos e refeições diárias para crianças e adolescentes do Parque da Liberdade, em Americana/SP.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://eusoualec.org.br" # the base hostname & protocol for your site
+lang: pt-BR
+logo: /assets/images/logo_alec.png
 telefone: (19) 99129-2661
 email: eusoualec@gmail.com
 inscritos: 325
@@ -12,9 +14,25 @@ voluntarios: 60
 
 # Build settings
 markdown: kramdown
-exclude: [vendor]
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - README.md
+  - .rubocop.yml
 
 defaults:
+  # Imagem padrão usada em og:image / twitter:image ao compartilhar qualquer página
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/slider/home-slider-1.jpg
   - scope:
       path: "assets/images/gallery"
     values:

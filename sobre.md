@@ -1,7 +1,8 @@
 ---
 layout: page-heading
 title: Quem Somos
-page-description: Conheça o nosso projeto
+subtitle: Conheça o nosso projeto
+description: A história da Associação Livres em Cristo, fundada em 2014 no Parque da Liberdade, em Americana/SP, para proteger e desenvolver crianças e adolescentes.
 ---
 ### **HISTÓRIA**
 

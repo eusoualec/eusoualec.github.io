@@ -7,7 +7,7 @@ layout: default
 
     <h1 class="page-title">{{ page.title }}<span class="title-under"></span></h1>
     <p class="page-description">
-      {{ page.page-description }}
+      {{ page.subtitle | default: page.description }}
     </p>
 
   </div>
