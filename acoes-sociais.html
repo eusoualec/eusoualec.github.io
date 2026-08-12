@@ -14,9 +14,10 @@ description: Galeria de fotos das ações sociais, atividades e momentos especia
 				{% assign image_files = site.static_files | where: "gallery", true %}
 				{% for image in image_files %}
 
-					<a href="{{ image.path }}" class="col-md-3 gallery-item lightbox" rel="prettyPhoto[alec]">
+					<a href="{{ image.path }}" class="col-md-3 gallery-item lightbox" rel="prettyPhoto[alec]"
+						aria-label="Ampliar foto {{ forloop.index }} de {{ forloop.length }} da galeria">
 
-						<img src="{{ image.path | replace: "gallery", "gallery-thumb" }}" alt="Imagem da galeria">
+						<img src="{{ image.path | replace: "gallery", "gallery-thumb" }}" alt="" loading="lazy" decoding="async">
 
 						<span class="on-hover">
 

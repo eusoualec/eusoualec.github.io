@@ -32,4 +32,4 @@ Possuímos hoje cerca de {{ site.inscritos }} inscritos, que além de participar
 
 Este projeto acontece com ajuda de corações generosos, que já somam {{ site.voluntarios }} voluntários, pessoas que doam seu tempo e são responsáveis pela aplicação das atividades, preparo das refeições e manutenção do local.
 
-![Fundadores](assets/images/fundadores.jpg)
+![Os fundadores da Alec, Fernanda e Willian](assets/images/fundadores.jpg){: width="1024" height="683" loading="lazy"}

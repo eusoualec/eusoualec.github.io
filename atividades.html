@@ -22,7 +22,7 @@ description: "Informática, teatro, balé, futebol, violão, capoeira, reforço 
 
 										<div class="cause">
 
-												<img src="assets/images/causes/{{ activity.name | downcase }}.jpg" alt="{{ activity.name }}" class="cause-img">
+												<img src="assets/images/causes/{{ activity.name | downcase | uri_escape }}.jpg" alt="{{ activity.name }}" class="cause-img" width="261" height="198" loading="lazy">
 
 												<h4 class="cause-title">{{ activity.name }}</h4>
 												<div class="cause-details">
