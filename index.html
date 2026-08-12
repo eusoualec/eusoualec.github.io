@@ -19,7 +19,9 @@ layout: default
 
             <div class="item active">
 
-              <img src="assets/images/slider/home-slider-1.jpg" alt="#EuSouALec">
+              <img src="assets/images/slider/home-slider-1.jpg"
+                   srcset="assets/images/slider/home-slider-1-900w.jpg 900w, assets/images/slider/home-slider-1.jpg 1800w"
+                   sizes="100vw" alt="#EuSouALec" width="1800" height="800" fetchpriority="high">
 
               <div class="container">
 
@@ -27,16 +29,6 @@ layout: default
 
                   <h2 class="carousel-title bounceInDown animated slow">#EuSouALec</h2>
                   <h4 class="carousel-subtitle bounceInUp animated slow ">CRIANÇA PRECISA SER LIVRE PARA BRINCAR, CANTAR E DANÇAR</h4>
-                  
-                  <div class="row carousel-title bounceInDown animated slow">
-                    
-                    <video width="80%" height="80%"
-                      poster="assets/images/thumb.png"
-                      controls>
-                      <source src="https://s3.amazonaws.com/eusoualec.org.br/institucional.mp4" type="video/mp4">
-                    </video>
-
-                  </div>
 
                   <a href="/sobre.html" class="btn btn-lg btn-secondary bounceInUp animated slow">CONHEÇA A ALEC</a>
 
@@ -49,7 +41,9 @@ layout: default
 
             <div class="item ">
 
-              <img src="assets/images/slider/home-slider-2.jpg" alt="#EuVistoEssaCamisa">
+              <img src="assets/images/slider/home-slider-2.jpg"
+                   srcset="assets/images/slider/home-slider-2-900w.jpg 900w, assets/images/slider/home-slider-2.jpg 1800w"
+                   sizes="100vw" alt="#EuVistoEssaCamisa" width="1800" height="800">
 
               <div class="container">
 
@@ -70,7 +64,9 @@ layout: default
 
             <div class="item ">
 
-              <img src="assets/images/slider/home-slider-3.jpg" alt="#CausaSocial">
+              <img src="assets/images/slider/home-slider-3.jpg"
+                   srcset="assets/images/slider/home-slider-3-900w.jpg 900w, assets/images/slider/home-slider-3.jpg 1800w"
+                   sizes="100vw" alt="#CausaSocial" width="1800" height="800">
 
               <div class="container">
 
@@ -99,6 +95,28 @@ layout: default
           </a>
 
     </div><!-- /.carousel -->
+
+    <!-- Vídeo institucional
+    ================================================== -->
+    <section class="section-video">
+
+      <div class="container">
+
+        <h2 class="title-style-1">CONHEÇA A ALEC EM VÍDEO<span class="title-under"></span></h2>
+
+        <div class="video-wrapper">
+          <video controls preload="none"
+                 width="1280" height="678"
+                 poster="assets/images/video-poster.jpg">
+            <source src="https://s3.amazonaws.com/eusoualec.org.br/institucional.mp4" type="video/mp4">
+            Seu navegador não reproduz vídeo.
+            <a href="https://s3.amazonaws.com/eusoualec.org.br/institucional.mp4">Baixe o vídeo institucional</a>.
+          </video>
+        </div>
+
+      </div>
+
+    </section>
 
     <div class="container">
     {% include destaques.html %}

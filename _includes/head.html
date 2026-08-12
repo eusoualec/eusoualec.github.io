@@ -6,9 +6,10 @@
   <!-- Title, description, canonical, Open Graph, Twitter Card e JSON-LD -->
   {% seo %}
 
-  <!-- Fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet' type='text/css'>
+  <!-- Fonts: um único request, com swap para o texto não ficar invisível enquanto carrega -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Dosis:400,700&display=swap">
 
   <!-- Bootsrap -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -25,6 +26,32 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+  <!-- Dados estruturados da ONG: alimenta o painel do Google com endereço, telefone e contato -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "name": "Associação Livres em Cristo",
+    "alternateName": "Alec",
+    "url": {{ site.url | append: site.baseurl | append: "/" | jsonify }},
+    "logo": {{ site.logo | absolute_url | jsonify }},
+    "image": {{ "/assets/images/slider/home-slider-1.jpg" | absolute_url | jsonify }},
+    "description": {{ site.description | jsonify }},
+    "email": {{ site.email | jsonify }},
+    "telephone": {{ site.telefone | jsonify }},
+    "foundingDate": "2014-10-12",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Serra Formosa, 69 - Parque da Liberdade",
+      "addressLocality": "Americana",
+      "addressRegion": "SP",
+      "postalCode": "13470-423",
+      "addressCountry": "BR"
+    },
+    "sameAs": ["https://www.facebook.com/eusoualec/"]
+  }
+  </script>
 
   <!--  Plausible Analytics-->
   <script async defer data-domain="eusoualec.org.br" src="https://plausible.io/js/plausible.js"></script>
