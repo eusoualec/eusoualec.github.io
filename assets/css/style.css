@@ -50,7 +50,7 @@ a:hover, a:focus, a:active {
 .navbar-top .header-contact li {
   margin-right: 15px;
 }
-.navbar-top .header-contact li .fa {
+.navbar-top .header-contact li .icone {
   margin-right: 5px;
 }
 
@@ -77,20 +77,14 @@ a:hover, a:focus, a:active {
   padding: 0;
   visibility: hidden;
   top: 85px;
-  -moz-transition: all, 0.05s;
-  -o-transition: all, 0.05s;
-  -webkit-transition: all, 0.05s;
-  transition: all, 0.05s;
+  transition: all 0.05s;
 }
 .navbar-main .submenu li {
   border-top: 1px solid #185b91;
 }
 .navbar-main .submenu li:hover {
   background: #185b91;
-  -moz-transition: all, 0.3s;
-  -o-transition: all, 0.3s;
-  -webkit-transition: all, 0.3s;
-  transition: all, 0.3s;
+  transition: all 0.3s;
 }
 .navbar-main .submenu li a {
   width: 100%;
@@ -110,10 +104,7 @@ a:hover, a:focus, a:active {
 .navbar-main li:focus-within .submenu {
   top: 62px;
   visibility: visible;
-  -moz-transition: all, 0.25s;
-  -o-transition: all, 0.25s;
-  -webkit-transition: all, 0.25s;
-  transition: all, 0.25s;
+  transition: all 0.25s;
 }
 .navbar-main .icon-bar {
   background: #fff;
@@ -130,12 +121,9 @@ a:hover, a:focus, a:active {
   width: 40px;
   top: 50%;
   margin-top: -40px;
-  -moz-transition: width, 0.3s;
-  -o-transition: width, 0.3s;
-  -webkit-transition: width, 0.3s;
-  transition: width, 0.3s;
+  transition: width 0.3s;
 }
-.carousel-home .carousel-control .fa {
+.carousel-home .carousel-control .icone {
   font-size: 2.5em;
   padding-top: 12px;
 }
@@ -227,10 +215,7 @@ a:hover, a:focus, a:active {
 }
 .reasons-col img {
   width: 100%;
-  -moz-transition: all, 0.5s;
-  -o-transition: all, 0.5s;
-  -webkit-transition: all, 0.5s;
-  transition: all, 0.5s;
+  transition: all 0.5s;
 }
 .reasons-col .reasons-titles {
   position: absolute;
@@ -258,23 +243,15 @@ a:hover, a:focus, a:active {
   border-bottom: 1px solid #fff;
   visibility: hidden;
   opacity: 0;
-  -moz-transition: all, 0.5s;
-  -o-transition: all, 0.5s;
-  -webkit-transition: all, 0.5s;
-  transition: all, 0.5s;
+  transition: all 0.5s;
 }
 .reasons-col:hover .on-hover {
   visibility: visible;
   opacity: 1;
   padding: 50px;
-  -moz-transition: all, 1s;
-  -o-transition: all, 1s;
-  -webkit-transition: all, 1s;
-  transition: all, 1s;
+  transition: all 1s;
 }
 .reasons-col:hover img {
-  -moz-transform: perspective(1.1) scale3d(1.1, 1.1, 1.1);
-  -webkit-transform: perspective(1.1) scale3d(1.1, 1.1, 1.1);
   transform: perspective(1.1) scale3d(1.1, 1.1, 1.1);
 }
 
@@ -284,10 +261,7 @@ a:hover, a:focus, a:active {
   padding-bottom: 15px;
   margin-bottom: 30px;
   border: 1px solid #1f76bd;
-  -moz-transition: all, 0.3s;
-  -o-transition: all, 0.3s;
-  -webkit-transition: all, 0.3s;
-  transition: all, 0.3s;
+  transition: all 0.3s;
 }
 .cause .cause-progress {
   margin: 0 10px 15px;
@@ -407,10 +381,7 @@ a:hover, a:focus, a:active {
   background: #115c9b;
   text-transform: uppercase;
   border: 1px solid #fff;
-  -moz-transition: all, 0.5s;
-  -o-transition: all, 0.5s;
-  -webkit-transition: all, 0.5s;
-  transition: all, 0.5s;
+  transition: all 0.5s;
 }
 .footer-form .btn-submit:hover {
   background: #fff;
@@ -498,7 +469,7 @@ a:hover, a:focus, a:active {
   color: #fff;
   text-align: center;
 }
-.contact-items .contact-icon .fa {
+.contact-items .contact-icon .icone {
   vertical-align: sub;
   font-size: 20px;
   margin-top: 7px;
@@ -531,10 +502,7 @@ form .alert {
   border-radius: 0;
   padding: 10px 25px;
   border: 1px solid transparent;
-  -moz-transition: all, 0.3s;
-  -o-transition: all, 0.3s;
-  -webkit-transition: all, 0.3s;
-  transition: all, 0.3s;
+  transition: all 0.3s;
 }
 .btn-primary:hover {
   background: #fff;
@@ -688,10 +656,7 @@ form .alert {
   overflow: hidden;
 }
 .lightbox img {
-  -moz-transition: all, 0.5s;
-  -o-transition: all, 0.5s;
-  -webkit-transition: all, 0.5s;
-  transition: all, 0.5s;
+  transition: all 0.5s;
 }
 .lightbox .on-hover {
   position: absolute;
@@ -705,10 +670,7 @@ form .alert {
   background: rgba(31, 118, 189, 0.75);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  -moz-transition: all, 0.6s;
-  -o-transition: all, 0.6s;
-  -webkit-transition: all, 0.6s;
-  transition: all, 0.6s;
+  transition: all 0.6s;
 }
 .lightbox .on-hover .hover-caption {
   text-align: center;
@@ -720,10 +682,7 @@ form .alert {
   display: block;
   font-family: "Dosis", sans-serif;
   bottom: -50px;
-  -moz-transition: all, 0.6s;
-  -o-transition: all, 0.6s;
-  -webkit-transition: all, 0.6s;
-  transition: all, 0.6s;
+  transition: all 0.6s;
 }
 .lightbox .on-hover:before {
   content: "";
@@ -746,8 +705,6 @@ form .alert {
   bottom: 25px;
 }
 .lightbox:hover img {
-  -moz-transform: perspective(1.15) scale3d(1.15, 1.15, 1.15);
-  -webkit-transform: perspective(1.15) scale3d(1.15, 1.15, 1.15);
   transform: perspective(1.15) scale3d(1.15, 1.15, 1.15);
 }
 
@@ -767,10 +724,7 @@ form .alert {
   margin-top: -16px;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
   opacity: 0.75;
-  -moz-transition: all, 0.5s;
-  -o-transition: all, 0.5s;
-  -webkit-transition: all, 0.5s;
-  transition: all, 0.5s;
+  transition: all 0.5s;
 }
 .owl-next:hover,
 .owl-prev:hover {
@@ -877,7 +831,7 @@ form .alert {
     top: 50%;
     margin-top: -20px;
   }
-  .carousel-home .carousel-control .fa {
+  .carousel-home .carousel-control .icone {
     font-size: 1.5em;
     padding-top: 4px;
   }
@@ -915,17 +869,13 @@ form .alert {
 
 .animated {
   visibility: visible;
-  -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 .animated.slow {
-  -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
 }
 .animated.fadeIn {
-  -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
 }
 
@@ -946,7 +896,6 @@ form .alert {
   }
 }
 .fadeIn {
-  -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
 
@@ -957,24 +906,19 @@ form .alert {
   }
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, 3000px, 0);
     transform: translate3d(0, 3000px, 0);
   }
   60% {
     opacity: 1;
-    -webkit-transform: translate3d(0, -20px, 0);
     transform: translate3d(0, -20px, 0);
   }
   75% {
-    -webkit-transform: translate3d(0, 10px, 0);
     transform: translate3d(0, 10px, 0);
   }
   90% {
-    -webkit-transform: translate3d(0, -5px, 0);
     transform: translate3d(0, -5px, 0);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
@@ -985,29 +929,23 @@ form .alert {
   }
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, 3000px, 0);
     transform: translate3d(0, 3000px, 0);
   }
   60% {
     opacity: 1;
-    -webkit-transform: translate3d(0, -20px, 0);
     transform: translate3d(0, -20px, 0);
   }
   75% {
-    -webkit-transform: translate3d(0, 10px, 0);
     transform: translate3d(0, 10px, 0);
   }
   90% {
-    -webkit-transform: translate3d(0, -5px, 0);
     transform: translate3d(0, -5px, 0);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
 .bounceInUp {
-  -webkit-animation-name: bounceInUp;
   animation-name: bounceInUp;
 }
 
@@ -1018,24 +956,19 @@ form .alert {
   }
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, -3000px, 0);
     transform: translate3d(0, -3000px, 0);
   }
   60% {
     opacity: 1;
-    -webkit-transform: translate3d(0, 25px, 0);
     transform: translate3d(0, 25px, 0);
   }
   75% {
-    -webkit-transform: translate3d(0, -10px, 0);
     transform: translate3d(0, -10px, 0);
   }
   90% {
-    -webkit-transform: translate3d(0, 5px, 0);
     transform: translate3d(0, 5px, 0);
   }
   100% {
-    -webkit-transform: none;
     transform: none;
   }
 }
@@ -1046,36 +979,29 @@ form .alert {
   }
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, -3000px, 0);
     transform: translate3d(0, -3000px, 0);
   }
   60% {
     opacity: 1;
-    -webkit-transform: translate3d(0, 25px, 0);
     transform: translate3d(0, 25px, 0);
   }
   75% {
-    -webkit-transform: translate3d(0, -10px, 0);
     transform: translate3d(0, -10px, 0);
   }
   90% {
-    -webkit-transform: translate3d(0, 5px, 0);
     transform: translate3d(0, 5px, 0);
   }
   100% {
-    -webkit-transform: none;
     transform: none;
   }
 }
 .bounceInDown {
-  -webkit-animation-name: bounceInDown;
   animation-name: bounceInDown;
 }
 
 @-webkit-keyframes zoomIn {
   0% {
     opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
     transform: scale3d(0.3, 0.3, 0.3);
   }
   50% {
@@ -1085,7 +1011,6 @@ form .alert {
 @keyframes zoomIn {
   0% {
     opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
     transform: scale3d(0.3, 0.3, 0.3);
   }
   50% {
@@ -1093,7 +1018,6 @@ form .alert {
   }
 }
 .zoomIn {
-  -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
 }
 

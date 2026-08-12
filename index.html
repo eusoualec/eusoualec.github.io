@@ -6,18 +6,19 @@ layout: default
 
     <!-- Carousel
     ================================================== -->
-    <div id="homeCarousel" class="carousel slide carousel-home" data-ride="carousel" data-interval="7500">
+    <div id="homeCarousel" class="carousel carousel-home" data-interval="7500"
+         role="group" aria-roledescription="carrossel" aria-label="Destaques da Alec">
 
-          <!-- Indicators -->
+          <!-- Indicadores -->
           <ol class="carousel-indicators">
-            <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#homeCarousel" data-slide-to="1"></li>
-            <li data-target="#homeCarousel" data-slide-to="2"></li>
+            <li><button type="button" data-slide-to="0" class="active" aria-current="true" aria-label="Ir para o slide 1 de 3"></button></li>
+            <li><button type="button" data-slide-to="1" aria-current="false" aria-label="Ir para o slide 2 de 3"></button></li>
+            <li><button type="button" data-slide-to="2" aria-current="false" aria-label="Ir para o slide 3 de 3"></button></li>
           </ol>
 
-          <div class="carousel-inner" role="listbox">
+          <div class="carousel-inner">
 
-            <div class="item active">
+            <div class="item active" role="group" aria-roledescription="slide" aria-label="1 de 3">
 
               <img src="assets/images/slider/home-slider-1.jpg"
                    srcset="assets/images/slider/home-slider-1-900w.jpg 900w, assets/images/slider/home-slider-1.jpg 1800w"
@@ -39,7 +40,7 @@ layout: default
             </div> <!-- /.item -->
 
 
-            <div class="item ">
+            <div class="item " role="group" aria-roledescription="slide" aria-label="2 de 3">
 
               <img src="assets/images/slider/home-slider-2.jpg"
                    srcset="assets/images/slider/home-slider-2-900w.jpg 900w, assets/images/slider/home-slider-2.jpg 1800w"
@@ -62,7 +63,7 @@ layout: default
 
 
 
-            <div class="item ">
+            <div class="item " role="group" aria-roledescription="slide" aria-label="3 de 3">
 
               <img src="assets/images/slider/home-slider-3.jpg"
                    srcset="assets/images/slider/home-slider-3-900w.jpg 900w, assets/images/slider/home-slider-3.jpg 1800w"
@@ -84,15 +85,18 @@ layout: default
 
           </div>
 
-          <a class="left carousel-control" href="#homeCarousel" role="button" data-slide="prev">
-            <span class="fa fa-angle-left" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-          </a>
+          <button type="button" class="left carousel-control" data-slide="prev">
+            {% include icone.html nome="seta-esquerda" %}
+            <span class="sr-only">Slide anterior</span>
+          </button>
 
-          <a class="right carousel-control" href="#homeCarousel" role="button" data-slide="next">
-            <span class="fa fa-angle-right" aria-hidden="true"></span>
-            <span class="sr-only">Próximo</span>
-          </a>
+          <button type="button" class="right carousel-control" data-slide="next">
+            {% include icone.html nome="seta-direita" %}
+            <span class="sr-only">Próximo slide</span>
+          </button>
+
+          <button type="button" class="carousel-pausa" aria-pressed="false"
+                  aria-label="Pausar a troca automática de slides">&#10073;&#10073;</button>
 
     </div><!-- /.carousel -->
 

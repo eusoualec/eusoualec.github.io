@@ -21,10 +21,10 @@ description: "Endereço, telefone e e-mail da Alec: Rua Serra Formosa, 69, Parqu
 					<div class="contact-items">
 
 						<ul class="list-unstyled contact-items-list">
-							<li class="contact-item"> <span class="contact-icon"> <i class="fa fa-map-marker"></i></span> <a href="https://goo.gl/maps/x4C8WtdnHAG2" target="_blank" rel="noopener">Rua Serra Formosa, 69 - Parque da Liberdade - CEP 13470-­423 - Americana, SP Brasil</a></li>
-							<li class="contact-item"> <span class="contact-icon"> <i class="fa fa-phone"></i></span> {{ site.telefone }}</li>
+							<li class="contact-item"> <span class="contact-icon">{% include icone.html nome="local" %}</span> <a href="https://goo.gl/maps/x4C8WtdnHAG2" target="_blank" rel="noopener">Rua Serra Formosa, 69 - Parque da Liberdade - CEP 13470-­423 - Americana, SP Brasil</a></li>
+							<li class="contact-item"> <span class="contact-icon">{% include icone.html nome="telefone" %}</span> {{ site.telefone }}</li>
 
-							<li class="contact-item"> <span class="contact-icon"> <i class="fa fa-envelope"></i></span> <a href="mailto:{{ site.email }}"> {{ site.email }}</a></li>
+							<li class="contact-item"> <span class="contact-icon">{% include icone.html nome="email" %}</span> <a href="mailto:{{ site.email }}"> {{ site.email }}</a></li>
 						</ul>
 					</div>
 

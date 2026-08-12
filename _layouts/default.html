@@ -4,30 +4,22 @@
   {% include head.html %}
 
   <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
     {% include header.html %}
 
-    <div class="page-content">
+    <main id="conteudo" class="page-content" tabindex="-1">
       <div class="wrapper">
         {{ content }}
       </div>
-    </div>
+    </main>
 
     {% include footer.html %}
 
     <!--  Scripts
     ================================================== -->
 
-    <!-- jQuery -->
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
-
-    <!-- Bootsrap javascript file -->
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <!-- PrettyPhoto javascript file -->
-    <script src="assets/js/jquery.prettyPhoto.js"></script>
-
-    <!-- Template main javascript -->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js" defer></script>
 
   </body>
 
