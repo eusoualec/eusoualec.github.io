@@ -29,9 +29,15 @@ body {
   background: #fff;
 }
 
+/* O "height: auto" nao e opcional aqui: sem ele, quando o max-width reduz a
+   largura, o atributo height do HTML continua valendo e a imagem achata. Vale
+   para qualquer imagem com width/height no markup dentro de um container mais
+   estreito que ela. Quem precisa de altura fixa (as miniaturas da galeria)
+   sobrescreve com uma regra mais especifica. */
 img,
 video {
   max-width: 100%;
+  height: auto;
   border: 0;
   vertical-align: middle;
 }
