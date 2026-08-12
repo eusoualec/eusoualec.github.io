@@ -30,10 +30,16 @@ body {
 }
 
 /* O "height: auto" nao e opcional aqui: sem ele, quando o max-width reduz a
-   largura, o atributo height do HTML continua valendo e a imagem achata. Vale
-   para qualquer imagem com width/height no markup dentro de um container mais
-   estreito que ela. Quem precisa de altura fixa (as miniaturas da galeria)
-   sobrescreve com uma regra mais especifica. */
+   largura, o atributo height do markup continua valendo e o elemento e
+   desenhado achatado. Vale para qualquer <img> ou <video> com width/height no
+   markup dentro de um container mais estreito que ele.
+
+   A consequencia e diferente nos dois casos: a imagem realmente deforma,
+   enquanto o video, cujo object-fit padrao e "contain", encaixa o quadro com
+   barras dentro da caixa errada. Feio nos dois, destrutivo so no primeiro.
+
+   Quem precisa de altura fixa (as miniaturas da galeria) sobrescreve com uma
+   regra mais especifica. */
 img,
 video {
   max-width: 100%;
