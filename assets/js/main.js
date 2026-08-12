@@ -43,11 +43,18 @@
     var intervalo = parseInt(raiz.getAttribute('data-interval'), 10) || 7500;
     var atual = Math.max(0, itens.findIndex(function (i) { return i.classList.contains('active'); }));
     var timer = null;
-    var emTransicao = false;
+    // Enquanto uma troca esta no ar, "finalizaAtual" conclui aquela troca — e
+    // so aquela. Um booleano compartilhado deixaria a rede de seguranca de uma
+    // troca encerrar a troca seguinte, com dois slides no ar ao mesmo tempo.
+    var finalizaAtual = null;
 
     function mostra(destino) {
+      // Uma troca em andamento e concluida na hora: assim o clique que chega
+      // no meio do fade muda de slide, em vez de ser engolido.
+      if (finalizaAtual) finalizaAtual();
+
       destino = (destino + itens.length) % itens.length;
-      if (destino === atual || emTransicao) return;
+      if (destino === atual) return;
 
       var sai = itens[atual];
       var entra = itens[destino];
@@ -64,31 +71,42 @@
         return;
       }
 
-      emTransicao = true;
       entra.classList.add('entrando');
       // força o cálculo de layout para o fade partir de opacity 0
       void entra.offsetWidth;
       entra.classList.add('visivel');
 
+      var rede = null;
       var finaliza = function () {
         entra.removeEventListener('transitionend', finaliza);
+        clearTimeout(rede);
+        if (finalizaAtual === finaliza) finalizaAtual = null;
         sai.classList.remove('active');
         entra.classList.remove('entrando', 'visivel');
         entra.classList.add('active');
-        emTransicao = false;
       };
+      finalizaAtual = finaliza;
       entra.addEventListener('transitionend', finaliza);
       // rede de seguranca: se o transitionend nao vier, conclui na marra
-      setTimeout(function () { if (emTransicao) finaliza(); }, 900);
+      rede = setTimeout(finaliza, 900);
     }
 
     // "ligado" e a intencao do visitante; o timer e o estado do momento. Pausas
     // temporarias (hover, foco, aba oculta) mexem so no timer, nunca na
     // intencao — senao passar o mouse sobre o botao ja o deixaria invertido.
+    // Cada pausa temporaria tem a sua propria marca: com um sinalizador so, o
+    // fim de uma (tirar o mouse, voltar para a aba) religaria o autoplay com
+    // outra ainda de pe — o foco do teclado ainda dentro do carrossel.
     var ligado = !semAnimacao;
+    var ponteiroDentro = false;
+    var focoDentro = false;
+
+    function podeRodar() {
+      return ligado && !ponteiroDentro && !focoDentro && !document.hidden;
+    }
 
     function inicia() {
-      if (timer || !ligado) return;
+      if (timer || !podeRodar()) return;
       timer = setInterval(function () { mostra(atual + 1); }, intervalo);
     }
 
@@ -96,6 +114,10 @@
       if (!timer) return;
       clearInterval(timer);
       timer = null;
+    }
+
+    function reavalia() {
+      if (podeRodar()) { inicia(); } else { para(); }
     }
 
     var botaoPausa = raiz.querySelector('.carousel-pausa');
@@ -118,7 +140,11 @@
     if (botaoPausa) {
       botaoPausa.addEventListener('click', function () {
         ligado = !ligado;
-        if (ligado) { inicia(); } else { para(); }
+        // Pedido explicito manda mais que as pausas temporarias: sem isso,
+        // retomar pelo botao nao faria nada, porque o proprio clique deixa o
+        // ponteiro e o foco dentro do carrossel.
+        if (ligado) { ponteiroDentro = false; focoDentro = false; }
+        reavalia();
         atualizaBotaoPausa();
       });
     }
@@ -141,17 +167,15 @@
 
     // Pausa enquanto o ponteiro ou o teclado estao dentro do carrossel,
     // e enquanto a aba nao esta visivel.
-    raiz.addEventListener('mouseenter', para);
-    raiz.addEventListener('mouseleave', inicia);
-    raiz.addEventListener('focusin', para);
+    raiz.addEventListener('mouseenter', function () { ponteiroDentro = true; reavalia(); });
+    raiz.addEventListener('mouseleave', function () { ponteiroDentro = false; reavalia(); });
+    raiz.addEventListener('focusin', function () { focoDentro = true; reavalia(); });
     raiz.addEventListener('focusout', function (e) {
-      if (!raiz.contains(e.relatedTarget)) inicia();
+      if (!raiz.contains(e.relatedTarget)) { focoDentro = false; reavalia(); }
     });
-    document.addEventListener('visibilitychange', function () {
-      if (document.hidden) { para(); } else { inicia(); }
-    });
+    document.addEventListener('visibilitychange', reavalia);
 
-    inicia();
+    reavalia();
     atualizaBotaoPausa();
 
     // As imagens dos slides seguintes nascem lazy para não disputar banda com

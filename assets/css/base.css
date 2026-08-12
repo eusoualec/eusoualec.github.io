@@ -105,6 +105,13 @@ button:focus-visible,
   outline-offset: 2px;
 }
 
+/* Alvo do skip link: recebe foco por script/fragmento, nunca pela navegacao
+   por Tab — um contorno em volta do conteudo inteiro nao ajuda ninguem. */
+main[tabindex="-1"]:focus,
+main[tabindex="-1"]:focus-visible {
+  outline: none;
+}
+
 /* =============================================================================
   Ícones (SVG inline)
 ========================================================================== */
