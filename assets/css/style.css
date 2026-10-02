@@ -1036,7 +1036,7 @@ img[alt=Fundadores] { width: 100%; }
 }
 .navbar-main .nav-item-contribua > a:hover,
 .navbar-main .nav-item-contribua > a:focus {
-  background: #fff;
+  background: #fff !important;
   color: #1f76bd !important;
 }
 
@@ -1082,18 +1082,33 @@ img[alt=Fundadores] { width: 100%; }
   color: #111111;
 }
 .footer-btn-maps {
-  background: #1a73e8;
+  background: #1565c0;
 }
 .footer-btn-waze {
   background: #00b0e8;
+  color: #111111;
+}
+.footer-btn-waze:hover,
+.footer-btn-waze:focus {
+  color: #111111;
 }
 .footer-btn-instagram {
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #ba3d00 0%, #b82e5c 35%, #8a1f78 70%, #5a187a 100%);
 }
 .footer-btn-facebook {
-  background: #1877f2;
+  background: #1064d4;
 }
 .footer-btn-youtube {
-  background: #ff0000;
+  background: #cd201f;
+}
+
+.footer-clear-sm {
+  display: none;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer-clear-sm {
+    display: block;
+    clear: both;
+  }
 }
 
