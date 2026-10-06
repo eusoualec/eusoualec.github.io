@@ -1039,6 +1039,14 @@ img[alt=Fundadores] { width: 100%; }
   background: #fff !important;
   color: #1f76bd !important;
 }
+/* No menu recolhido o link ocupa a largura toda e a pilula encostava na borda
+   da tela; vira um botao alinhado ao recuo dos outros itens. */
+@media (max-width: 767px) {
+  .navbar-main .nav-item-contribua > a {
+    display: inline-block;
+    margin: 10px 0 10px 15px;
+  }
+}
 
 /* ==========================================================================
    Botões do Rodapé (Google, Waze, Redes Sociais)
