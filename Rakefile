@@ -13,6 +13,8 @@ task :test do
     ignore_urls: [
       %r{\Ahttps://fonts\.googleapis\.com/?\z},
       %r{\Ahttps://fonts\.gstatic\.com/?\z},
+      # O Instagram responde 429 para os runners do GitHub Actions
+      %r{\Ahttps://(www\.)?instagram\.com/},
       # A pagina de erro responde 404 por definicao; o canonical que o
       # jekyll-seo-tag gera para ela aponta para essa mesma URL.
       %r{/404\.html\z}
