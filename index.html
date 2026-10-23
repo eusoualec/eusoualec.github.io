@@ -111,10 +111,10 @@ layout: default
         <div class="video-wrapper">
           <video controls preload="none"
                  width="1280" height="720"
-                 poster="assets/images/video-poster.jpg">
-            <source src="assets/video/institucional.mp4" type="video/mp4">
+                 poster="{{ '/assets/images/video-poster.jpg' | relative_url }}">
+            <source src="{{ '/assets/video/institucional.mp4' | relative_url }}" type="video/mp4">
             Seu navegador não reproduz vídeo.
-            <a href="assets/video/institucional.mp4">Baixe o vídeo institucional</a>.
+            <a href="{{ '/assets/video/institucional.mp4' | relative_url }}" rel="nofollow">Baixe o vídeo institucional</a>.
           </video>
         </div>
 
