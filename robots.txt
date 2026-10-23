@@ -1,0 +1,8 @@
+---
+---
+User-agent: *
+# O vídeo institucional é servido pelo GitHub Pages, que tem limite de banda;
+# robôs não precisam baixá-lo.
+Disallow: /assets/video/
+
+Sitemap: {{ "/sitemap.xml" | absolute_url }}
