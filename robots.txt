@@ -1,6 +1,4 @@
 ---
-layout: null
-sitemap: false
 ---
 User-agent: *
 # O vídeo institucional é servido pelo GitHub Pages, que tem limite de banda;
